@@ -8,8 +8,9 @@ def standard_blood_pressure(age):
         return "Error: Maximum age is 65"
     if age <= 20:
         return 90 + int(age / 5)
-    if age > 20:
-        return 120 + int((age - 20) / 5)
+
+    # age > 20
+    return 120 + int((age - 20) / 5)
 
 
 class BloddPressureBoundaryTesting(unittest.TestCase):
